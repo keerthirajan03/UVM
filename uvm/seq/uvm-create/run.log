@@ -1,0 +1,79 @@
+# KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.2
+# KERNEL: (C) 2007-2014 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2014 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2014 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: (C) 2013-2014 NVIDIA Corporation
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+run -all;
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test my_test...
+# RUNTIME: Warning: RUNTIME_0232 uvm_tr_stream.svh (418): Non-existent associative array entry. Returning default value.
+# KERNEL: Time: 0 ns,  Iteration: 44,  Instance: /\package uvm_1_2.uvm_pkg\/uvm_task_phase,  Process: @INTERNAL#143_0@.
+# KERNEL: UVM_INFO /home/runner/testbench.sv(46) @ 0: uvm_test_top.m_seqr@@bs [BS] Create a packet ...
+# KERNEL: ---------------------------------------------------------------------
+# KERNEL: Name                           Type      Size  Value                 
+# KERNEL: ---------------------------------------------------------------------
+# KERNEL: pkt                            packet    -     @540                  
+# KERNEL:   addr                         integral  32    'h0                   
+# KERNEL:   depth                        int       32    'd2                   
+# KERNEL:   parent sequence (name)       string    2     bs                    
+# KERNEL:   parent sequence (full name)  string    22    uvm_test_top.m_seqr.bs
+# KERNEL:   sequencer                    string    19    uvm_test_top.m_seqr   
+# KERNEL: ---------------------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(49) @ 0: uvm_test_top.m_seqr@@bs [BS] Randomize packet ...
+# KERNEL: ---------------------------------------------------------------------
+# KERNEL: Name                           Type      Size  Value                 
+# KERNEL: ---------------------------------------------------------------------
+# KERNEL: pkt                            packet    -     @540                  
+# KERNEL:   addr                         integral  32    'h5b1f1ff             
+# KERNEL:   depth                        int       32    'd2                   
+# KERNEL:   parent sequence (name)       string    2     bs                    
+# KERNEL:   parent sequence (full name)  string    22    uvm_test_top.m_seqr.bs
+# KERNEL:   sequencer                    string    19    uvm_test_top.m_seqr   
+# KERNEL: ---------------------------------------------------------------------
+# KERNEL: UVM_INFO /home/runner/testbench.sv(52) @ 0: uvm_test_top.m_seqr@@bs [BS] Send item to sequencer ...
+# KERNEL: UVM_INFO /home/runner/testbench.sv(30) @ 0: uvm_test_top.m_drv [DRVR] Received item from sequencer
+# KERNEL: ---------------------------------------------------------------------
+# KERNEL: Name                           Type      Size  Value                 
+# KERNEL: ---------------------------------------------------------------------
+# KERNEL: pkt                            packet    -     @540                  
+# KERNEL:   addr                         integral  32    'h5b1f1ff             
+# KERNEL:   begin_time                   time      64    0                     
+# KERNEL:   depth                        int       32    'd2                   
+# KERNEL:   parent sequence (name)       string    2     bs                    
+# KERNEL:   parent sequence (full name)  string    22    uvm_test_top.m_seqr.bs
+# KERNEL:   sequencer                    string    19    uvm_test_top.m_seqr   
+# KERNEL: ---------------------------------------------------------------------
+# KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_objection.svh(1271) @ 0: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_report_server.svh(855) @ 0: reporter [UVM/REPORT/SERVER] 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :    7
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [BS]     3
+# KERNEL: [DRVR]     1
+# KERNEL: [RNTST]     1
+# KERNEL: [TEST_DONE]     1
+# KERNEL: [UVM/RELNOTES]     1
+# KERNEL: 
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (521): $finish called.

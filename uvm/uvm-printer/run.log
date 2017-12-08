@@ -1,0 +1,101 @@
+----------------------------------------------------------------
+UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+UVM_INFO ./tb/test_pkg.sv(34) @ 0: uvm_test_top [TST] print() called with no arguments
+-----------------------------------
+Name          Type      Size  Value
+-----------------------------------
+obj0          my_data   -     @2659
+  data        integral  8     'h5a 
+  addr        integral  8     'h1  
+  m_format0   format    -     @2672
+    header    integral  4     'hb  
+    footer    integral  3     'h0  
+    enable    integral  1     'h1  
+    body      integral  2     'h1  
+    m_color   colors    -     @2683
+      color   integral  4     'h8  
+      enable  integral  1     'h0  
+-----------------------------------
+UVM_INFO ./tb/test_pkg.sv(37) @ 0: uvm_test_top [TST] Calling print (uvm_default_line_printer)
+obj0: (my_data@2659) { data: 'h5a  addr: 'h1  m_format0: (format@2672) { header: 'hb  footer: 'h0  enable: 'h1  body: 'h1  m_color: (colors@2683) { color: 'h8  enable: 'h0  } } } 
+UVM_INFO ./tb/test_pkg.sv(40) @ 0: uvm_test_top [TST] Calling print (uvm_default_tree_printer)
+obj0: (my_data@2659) {
+  data: 'h5a 
+  addr: 'h1 
+  m_format0: (format@2672) {
+    header: 'hb 
+    footer: 'h0 
+    enable: 'h1 
+    body: 'h1 
+    m_color: (colors@2683) {
+      color: 'h8 
+      enable: 'h0 
+    }
+  }
+}
+UVM_INFO ./tb/test_pkg.sv(43) @ 0: uvm_test_top [TST] Calling print (uvm_default_table_printer)
+-----------------------------------
+Name          Type      Size  Value
+-----------------------------------
+obj0          my_data   -     @2659
+  data        integral  8     'h5a 
+  addr        integral  8     'h1  
+  m_format0   format    -     @2672
+    header    integral  4     'hb  
+    footer    integral  3     'h0  
+    enable    integral  1     'h1  
+    body      integral  2     'h1  
+    m_color   colors    -     @2683
+      color   integral  4     'h8  
+      enable  integral  1     'h0  
+-----------------------------------
+UVM_INFO ./tb/test_pkg.sv(46) @ 0: uvm_test_top [TST] Calling print (tprinter)
+-------------------------
+Name                Value
+-------------------------
+obj0                -    
+    obj0.data       0x5a 
+    obj0.addr       0x1  
+    obj0.m_format0  -    
+-------------------------
+UVM_INFO ./tb/test_pkg.sv(49) @ 0: uvm_test_top [TST] Print derivative (tprinter)
+UVM_INFO ./tb/my_pkg.sv(94) @ 0: reporter@@dv0 [DVR] do_print called
+-------------------------------------
+Name          Type        Size  Value
+-------------------------------------
+dv0           derivative  -     @2694
+  data        integral    8     'h0  
+  addr        integral    8     'h0  
+  m_format0   format      -     @2704
+    header    integral    4     'h0  
+    footer    integral    3     'h0  
+    enable    integral    1     'h0  
+    body      integral    2     'h0  
+    m_color   colors      -     @2713
+      color   integral    4     'h0  
+      enable  integral    1     'h0  
+  mode        integral    3     'h0  
+-------------------------------------
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    8
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DVR]     1
+[RNTST]     1
+[TST]     6
+Simulation complete via $finish(1) at time 0 FS + 179

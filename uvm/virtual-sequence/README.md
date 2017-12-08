@@ -1,0 +1,1 @@
+This example shows how a virtual sequence can be declared and used. The difference between this and the "virtual-sequenceR" is that in this case, individual sequenceR handles are placed within the virtual sequence itself instead of declaring a separate sequenceR class for it.

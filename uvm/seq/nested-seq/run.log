@@ -1,0 +1,66 @@
+----------------------------------------------------------------
+UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------
+Name                     Type                    Size  Value
+------------------------------------------------------------
+uvm_test_top             base_test               -     @2651
+  m_top_env              my_env                  -     @2716
+    m_drv0               my_driver               -     @2761
+      rsp_port           uvm_analysis_port       -     @2861
+      seq_item_port      uvm_seq_item_pull_port  -     @2810
+    m_seqr0              my_sequencer            -     @2892
+      rsp_export         uvm_analysis_export     -     @2951
+      seq_item_export    uvm_seq_item_pull_imp   -     @3499
+      arbitration_queue  array                   0     -
+      lock_queue         array                   0     -
+      num_last_reqs      integral                32    'd1
+      num_last_rsps      integral                32    'd1
+------------------------------------------------------------
+
+UVM_INFO ./tb/my_pkg.sv(92) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] Applying initial reset
+UVM_INFO ./tb/my_pkg.sv(96) @ 390000: uvm_test_top.m_top_env.m_drv0 [my_driver] DUT is now out of reset
+UVM_INFO ./tb/my_pkg.sv(103) @ 390000: uvm_test_top.m_top_env.m_drv0 [my_driver] Waiting for data from sequencer
+UVM_INFO ./tb/my_pkg.sv(170) @ 390000: uvm_test_top.m_top_env.m_seqr0@@seq1 [seq1] Executing pre_start()
+UVM_INFO ./tb/my_pkg.sv(180) @ 390000: uvm_test_top.m_top_env.m_seqr0@@seq1 [SEQ1] Starting seq1
+UVM_INFO ./tb/my_pkg.sv(206) @ 390000: uvm_test_top.m_top_env.m_seqr0@@m_seq2 [SEQ2] Starting seq2
+UVM_INFO ./tb/my_pkg.sv(229) @ 400000: uvm_test_top.m_top_env.m_seqr0@@m_seq2.m_seq3 [seq3] Executing pre_body
+UVM_INFO ./tb/my_pkg.sv(143) @ 400000: uvm_test_top.m_top_env.m_seqr0@@m_seq2 [seq2] Executing pre_do
+UVM_INFO ./tb/my_pkg.sv(139) @ 400000: uvm_test_top.m_top_env.m_seqr0@@m_seq2 [seq2] Executing mid_do
+UVM_INFO ./tb/my_pkg.sv(233) @ 400000: uvm_test_top.m_top_env.m_seqr0@@m_seq2.m_seq3 [SEQ3] Starting seq3
+UVM_INFO ./tb/my_pkg.sv(235) @ 410000: uvm_test_top.m_top_env.m_seqr0@@m_seq2.m_seq3 [SEQ3] Ending seq3
+UVM_INFO ./tb/my_pkg.sv(147) @ 410000: uvm_test_top.m_top_env.m_seqr0@@m_seq2 [seq2] Executing post_do
+UVM_INFO ./tb/my_pkg.sv(239) @ 410000: uvm_test_top.m_top_env.m_seqr0@@m_seq2.m_seq3 [seq3] Executing post_body
+UVM_INFO ./tb/my_pkg.sv(243) @ 410000: uvm_test_top.m_top_env.m_seqr0@@m_seq2.m_seq3 [seq3] Executing post_start
+UVM_INFO ./tb/my_pkg.sv(209) @ 410000: uvm_test_top.m_top_env.m_seqr0@@m_seq2 [SEQ2] Ending seq2
+UVM_INFO ./tb/my_pkg.sv(182) @ 410000: uvm_test_top.m_top_env.m_seqr0@@seq1 [SEQ1] Ending seq1
+UVM_INFO ./tb/my_pkg.sv(122) @ 410000: uvm_test_top.m_top_env.m_drv0 [my_driver] Finished DUT simulation
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   19
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[SEQ1]     2
+[SEQ2]     2
+[SEQ3]     2
+[UVMTOP]     1
+[my_driver]     4
+[seq1]     1
+[seq2]     3
+[seq3]     3
+Simulation complete via $finish(1) at time 410 NS + 95

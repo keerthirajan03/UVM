@@ -1,0 +1,86 @@
+----------------------------------------------------------------
+UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------
+Name                       Type                    Size  Value
+--------------------------------------------------------------
+uvm_test_top               base_test               -     @2667
+  m_top_env                top_env                 -     @2733
+    m_apb_agent            apb_agent               -     @2780
+      m_apb_drv            apb_driver              -     @4089
+        rsp_port           uvm_analysis_port       -     @4237
+        seq_item_port      uvm_seq_item_pull_port  -     @4188
+      m_apb_mon            apb_monitor             -     @4217
+      m_apb_seqr           uvm_sequencer           -     @3512
+        rsp_export         uvm_analysis_export     -     @3569
+        seq_item_export    uvm_seq_item_pull_imp   -     @4109
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+    m_spi_agent            spi_agent               -     @2840
+      m_spi_drv            spi_driver              -     @4897
+        rsp_port           uvm_analysis_port       -     @5043
+        seq_item_port      uvm_seq_item_pull_port  -     @4995
+      m_spi_mon            spi_monitor             -     @5024
+      m_spi_seqr           uvm_sequencer           -     @4321
+        rsp_export         uvm_analysis_export     -     @4377
+        seq_item_export    uvm_seq_item_pull_imp   -     @4917
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+    m_virt_seq             virtual_sequencer       -     @2870
+      rsp_export           uvm_analysis_export     -     @2928
+      seq_item_export      uvm_seq_item_pull_imp   -     @3478
+      arbitration_queue    array                   0     -    
+      lock_queue           array                   0     -    
+      num_last_reqs        integral                32    'd1  
+      num_last_rsps        integral                32    'd1  
+    m_wb_agent             wb_agent                -     @2810
+      m_wb_drv             wb_driver               -     @5712
+        rsp_port           uvm_analysis_port       -     @5858
+        seq_item_port      uvm_seq_item_pull_port  -     @5810
+      m_wb_mon             wb_monitor              -     @5839
+      m_wb_seqr            uvm_sequencer           -     @5136
+        rsp_export         uvm_analysis_export     -     @5192
+        seq_item_export    uvm_seq_item_pull_imp   -     @5732
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+--------------------------------------------------------------
+
+UVM_INFO ./tb/my_pkg.sv(68) @ 0: uvm_test_top.m_top_env.m_virt_seq@@m_virt_seq [VSEQ] Start of virtual sequence
+UVM_INFO ./tb/wb_agent.sv(63) @ 0: uvm_test_top.m_top_env.m_wb_agent.m_wb_seqr@@m_wb_reset_seq [RESET_SEQ] Starting wb_reset_seq
+UVM_INFO ./tb/apb_agent.sv(52) @ 20000: uvm_test_top.m_top_env.m_apb_agent.m_apb_seqr@@m_apb_rw_seq [RW_SEQ] Starting apb_rw_seq
+UVM_INFO ./tb/spi_agent.sv(74) @ 30000: uvm_test_top.m_top_env.m_spi_agent.m_spi_seqr@@m_spi_tx_seq [tx_SEQ] Starting spi_tx_seq
+UVM_INFO ./tb/my_pkg.sv(75) @ 30000: uvm_test_top.m_top_env.m_virt_seq@@m_virt_seq [VSEQ] End of virtual sequence
+UVM_INFO ./tb/my_pkg.sv(108) @ 30000: uvm_test_top [SHUT] Shutting down test ...
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    8
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RESET_SEQ]     1
+[RNTST]     1
+[RW_SEQ]     1
+[SHUT]     1
+[UVMTOP]     1
+[VSEQ]     2
+[tx_SEQ]     1
+Simulation complete via $finish(1) at time 30 NS + 93

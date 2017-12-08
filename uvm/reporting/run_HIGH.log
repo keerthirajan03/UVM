@@ -1,0 +1,71 @@
+----------------------------------------------------------------
+UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------
+Name                 Type                    Size  Value
+--------------------------------------------------------
+uvm_test_top         base_test               -     @2622
+  m_top_env          my_env                  -     @2687
+    m_drv0           my_driver               -     @2721
+      rsp_port       uvm_analysis_port       -     @2821
+      seq_item_port  uvm_seq_item_pull_port  -     @2770
+--------------------------------------------------------
+
+UVM_INFO ./tb/my_pkg.sv(45) @ 0: uvm_test_top.m_top_env [REPORT] get_report_verbosity_level = 300
+UVM_INFO ./tb/my_pkg.sv(38) @ 0: uvm_test_top.m_top_env [my_env] Hello UVM ! Simulation has started.
+UVM_INFO ./tb/my_pkg.sv(39) @ 0: uvm_test_top.m_top_env [my_env] Finishing up with run_phase ...
+UVM_INFO @ 0: uvm_test_top.m_top_env.m_drv0 [DRV] data = 0xe7, name = Old Style, volt = 2.374500
+UVM_INFO @ 0: uvm_test_top.m_top_env.m_drv0 [m_drv0] data = 0x231, name = Old Style, volt = 2.374500
+UVM_INFO @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] data = 0x11100111, name = Old Style, volt = 2.4
+UVM_INFO @ 0: uvm_test_top.m_top_env.m_drv0 [uvm_test_top.m_top_env.m_drv0] data = e7, name = Old Style, volt = 2.37
+........................................................................................
+UVM_INFO @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] None level message
+UVM_INFO @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] Low level message
+UVM_INFO @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] Medium level message
+UVM_INFO @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] High level message
+UVM_WARNING @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] Warning level message
+UVM_ERROR @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] Error level message
+UVM_INFO ./tb/my_pkg.sv(112) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] None level message - Display File/Line
+========================================================================================
+UVM_INFO ./tb/my_pkg.sv(126) @ 0: uvm_test_top.m_top_env.m_drv0 [DRV] [Driver] data = 0xa4, name = New Style, volt = 0.045000
+UVM_INFO ./tb/my_pkg.sv(127) @ 0: uvm_test_top.m_top_env.m_drv0 [
+�] [Driver] data = 0x164, name = New Style, volt = 0.045000
+UVM_INFO ./tb/my_pkg.sv(128) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] [Driver] data = 0x10100100, name = New Style, volt = 0.0
+UVM_INFO ./tb/my_pkg.sv(129) @ 0: uvm_test_top.m_top_env.m_drv0 [uvm_test_top.m_top_env.m_drv0] [Driver] data = a4, name = New Style, volt = 0.04
+........................................................................................
+UVM_INFO ./tb/my_pkg.sv(135) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] [Driver] None level message
+UVM_INFO ./tb/my_pkg.sv(136) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] [Driver] Low level message
+UVM_INFO ./tb/my_pkg.sv(137) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] [Driver] Medium level message
+UVM_INFO ./tb/my_pkg.sv(138) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] [Driver] High level message
+UVM_WARNING ./tb/my_pkg.sv(142) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] [Driver] Warning level message
+UVM_ERROR ./tb/my_pkg.sv(143) @ 0: uvm_test_top.m_top_env.m_drv0 [my_driver] [Driver] Error level message
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   22
+UVM_WARNING :    2
+UVM_ERROR :    2
+UVM_FATAL :    0
+** Report counts by id
+[
+�]     1
+[DRV]     2
+[REPORT]     1
+[RNTST]     1
+[UVMTOP]     1
+[m_drv0]     1
+[my_driver]    15
+[my_env]     2
+[uvm_test_top.m_top_env.m_drv0]     2
+Simulation complete via $finish(1) at time 0 FS + 179
